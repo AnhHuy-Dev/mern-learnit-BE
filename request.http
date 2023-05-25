@@ -1,0 +1,48 @@
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "anhkha1",
+    "password": "1234"
+}
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "anhhuy",
+    "password": "1234"
+}
+
+###
+POST http://localhost:3000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDY0ZjRkYjk1NTlhYmQxMmFjODQ2YzAiLCJpYXQiOjE2ODQ4OTgyOTN9.REXbZ_HV2JSyd1I7mJ6zmgeKob-45_GX5fTsj5ByKDA
+Content-Type: application/json
+
+{
+    "title": "my second post",
+    "description": "new post of me",
+    "url": "google.com",
+    "status": "LEARNING"
+}
+
+###
+GET http://localhost:3000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDY0ZjRkYjk1NTlhYmQxMmFjODQ2YzAiLCJpYXQiOjE2ODQ1MTA5MDB9.LN3PzPPPuN-Kq9E067wT1RRiD5wqT6L-ChDrLWiD6Ik
+
+###
+PUT http://localhost:3000/api/posts/6464fe4b1740209cc9be0ccc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDY0ZjRkYjk1NTlhYmQxMmFjODQ2YzAiLCJpYXQiOjE2ODQzNDM2MTB9.uso8jKF8Us8E4fdEyWcRQltQvnTbkgBMXSr5H0Qsp8A
+Content-Type: application/json
+
+{
+    "title": "my second post111",
+    "description": "new post of me",
+    "url": "google.com",
+    "status": "LEARNING"
+}
+
+###
+DELETE http://localhost:3000/api/posts/6464fe4b1740209cc9be0ccc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDY0ZjRkYjk1NTlhYmQxMmFjODQ2YzAiLCJpYXQiOjE2ODQzNDQwOTN9.RQS29zi7LOrDZGT8o3YRKkufRGG_5cdYfiFiw4oc-48
